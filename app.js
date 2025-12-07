@@ -10,6 +10,7 @@ const firebaseConfig = {
   appId: "1:1026485157700:web:5ea91f705cb05b62be2111",
   measurementId: "G-3LQCD2SYFL",
 };
+console.log("App loaded - Firebase connected");
 
 firebase.initializeApp(firebaseConfig);
 const db = firebase.firestore();
@@ -27,7 +28,6 @@ const modalAuthor = document.getElementById("modalAuthor");
 const modalPrice = document.getElementById("modalPrice");
 
 // 2. Add dummy data once (run only once, then comment/remove)
-async function addDummyBooksOnce() {
   const dummy = [
     {
       title: "JavaScript Basics",
